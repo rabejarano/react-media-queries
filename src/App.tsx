@@ -4,22 +4,43 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <div className="header">
+        <h1>Chania</h1>
+      </div>
+
+      <div className="row">
+        <div className="col-3 col-s-3 menu">
+          <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+          </ul>
+        </div>
+
+        <div className="col-6 col-s-9">
+          <h1>The City</h1>
+          <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        </div>
+
+        <div className="col-3 col-s-12">
+          <div className="aside">
+            <h2>What?</h2>
+            <p>Chania is a city on the island of Crete.</p>
+            <h2>Where?</h2>
+            <p>Crete is a Greek island in the Mediterranean Sea.</p>
+            <h2>How?</h2>
+            <p>You can reach Chania airport from all over Europe.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+      </div>
+    </>
   );
 }
 
